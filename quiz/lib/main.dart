@@ -13,7 +13,7 @@ class MyApp extends StatelessWidget {
       home: Scaffold(
         appBar: AppBar(title: Text('My First App'),
       ),
-      body: Text('This is very Defolt txt!'),
+      body: Text('reloadの速さを測るテストだよ'),
       ),
     );
   }
