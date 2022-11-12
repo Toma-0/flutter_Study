@@ -1,5 +1,3 @@
-import 'dart:html';
-
 import 'package:flutter/material.dart';
 
 void main() {
@@ -8,6 +6,7 @@ void main() {
       home: Scaffold(
         backgroundColor: Colors.red,
         appBar: AppBar(
+          backgroundColor: Colors.red,
           title: Text("Dicee"),
         ),
         body: DicePage(),
@@ -20,7 +19,17 @@ class DicePage extends StatelessWidget {
   @override
   Widget build(BuildContext context) {
     return Row(
-      children: [Image(image: AssetImage("images/dice1.png"))],
+      children: <Widget>[
+        Expanded(
+          flex: 1,
+          child: Image.asset("images/dice1.png"),
+          ),
+        
+        Expanded(
+          flex:1,
+          child: Image.asset("images/dice2.png"),
+        ),
+      ],
     );
   }
 }
